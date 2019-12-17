@@ -22,6 +22,7 @@ it('renders Display', () => {
 
 it('updates Display state by button', () => {
     const { getByTestId } = render(<Dashboard/>)
+    //EACH EVENT FLOWS!!! DO NOT ALTER ORDER WITHOUT CONSIDERING EVENT FLOW FIRST
     //gate is open & has green-led class
     expect(getByTestId('closed').textContent).toBe('Open')
     expect(getByTestId('closed').className).toBe('led green-led')
